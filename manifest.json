@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Mute Slack",
+  "description": "Mute the Slack favicon and prevent distractions.",
+  "version": "1.0",
+  "background": {
+    "scripts": [
+      "control.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "slackOff.png"
+  },
+  "permissions": [
+    "https://*.slack.com/*",
+    "tabs"
+  ]
+}
